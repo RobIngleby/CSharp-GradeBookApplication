@@ -18,7 +18,7 @@ namespace GradeBook.GradeBooks
 
             if (Students.Count > 5)
             {
-                throw new InvalidOperationException();
+                throw new InvalidOperationException("At least 5 students required");
 
             }
             return 'F'; // base.GetLetterGrade(averageGrade);
