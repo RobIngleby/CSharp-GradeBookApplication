@@ -1,4 +1,5 @@
 ﻿using GradeBook.Enums;
+
 using System;
 
 namespace GradeBook.GradeBooks
@@ -9,7 +10,7 @@ namespace GradeBook.GradeBooks
         public RankedGradeBook(string name):base(name)
         {
             Type = GradeBookType.Ranked;
-        }
+   
 
         public override char GetLetterGrade(double averageGrade)
         {
