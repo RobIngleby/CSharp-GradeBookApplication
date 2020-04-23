@@ -1,6 +1,7 @@
 ﻿using GradeBook.Enums;
 
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace GradeBook.GradeBooks
@@ -20,6 +21,20 @@ namespace GradeBook.GradeBooks
                 throw new InvalidOperationException("You must have at least 5 students to do ranked grading.");
             }
 
+
+            int tyveProcent = Students.Count * (20 / 100); // 20 %
+            //  var threshold = (int)Math.Ceiling(Students.Count * 0.2);
+        
+            var grades = Students.OrderByDescending(e => e.AverageGrade).Select(e => e.AverageGrade).ToList();
+
+            if (averageGrade >= grades[tyveProcent - 1])
+                 return 'A';
+            if (averageGrade >= grades[(tyveProcent * 2) - 1])
+                return 'B';
+            if (averageGrade >= grades[(tyveProcent * 3) - 1])
+                return 'C';
+            if (averageGrade >= grades[(tyveProcent * 4) - 1])
+                return 'D';
             return 'F';
         }// end GetLetterGrade
         
