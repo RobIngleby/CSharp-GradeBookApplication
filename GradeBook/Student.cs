@@ -28,7 +28,7 @@ namespace GradeBook
 
         public Student(string name, StudentType studentType, EnrollmentType enrollment)
         {
-            Name = name;
+             Name = name;
             Type = studentType;
             Enrollment = enrollment;
             Grades = new List<double>();
