@@ -85,7 +85,7 @@ namespace GradeBook.UserInterfaces
             Console.WriteLine("Create 'Name' - Creates a new gradebook where 'Name' is the name of the gradebook.");
 
             Console.WriteLine();
-            Console.WriteLine("Create 'Name' Type' - Creates a new gradebook where 'Name' is the name of the gradebook and 'Type' is what type of grading it should use. ");
+            Console.WriteLine("Create 'Name' 'Type' - Creates a new gradebook where 'Name' is the name of the gradebook and 'Type' is what type of grading it should use.");
 
 
             Console.WriteLine();
