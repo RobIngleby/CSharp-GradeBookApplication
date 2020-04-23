@@ -20,7 +20,7 @@ namespace GradeBook.GradeBooks
                 throw new InvalidOperationException("You must have at least 5 students to do ranked grading.");
             }
 
-           
+            return 'F';
         }// end GetLetterGrade
         
  
