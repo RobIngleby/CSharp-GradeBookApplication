@@ -118,6 +118,7 @@ namespace GradeBookTests
 
             try
             {
+                //TODO - Analyse StringReader/Writer more.
                 //Test that a `StandardGradeBook` is created with the correct name when value is "standard".
                 using (var consoleInputStream = new StringReader("close"))
                 {
