@@ -126,7 +126,7 @@ namespace GradeBookTests
                     {
                         Console.SetOut(consolestream);
                         StartingUserInterface.CreateCommand("create test standard");
-                        output = consolestream.ToString().ToLower();
+                        output = consolestream.ToString().ToLower() ;
 
                         Assert.True(output.Contains("standard"), "`GradeBook.UserInterfaces.StartingUserInterface` didn't create a `StandardGradeBook` when 'standard' was used with the `CreateCommand`.");
                     }
